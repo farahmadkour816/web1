@@ -1,0 +1,101 @@
+/* ... (Your existing CSS code) ... */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Added Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #20d0d6; /* Green background color */
+    color: white; /* White text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px; /* Adjusted spacing */
+}
+
+.button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+/* Added Styles for Arrow Toggle Button */
+.toggle-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-button {
+    background-color: #db3495;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Adjusted spacing */
+}
+
+.arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.information {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.show-information .arrow {
+    transform: rotate(180deg);
+}
+
+.show-information .information {
+    display: block;
+}
+

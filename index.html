@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farooha's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Farah Madkour</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to my Website</h2>
+        
+
+        <!-- Updated Button with href attribute -->
+        <a href="https://farahmadkour816.github.io/FarahMadkour/" class="button">Projects</a>
+        <p>This is a slay website.</p>
+        <!-- Arrow Toggle Button Section -->
+        <div class="toggle-container" id="toggleContainerHome">
+            <button class="toggle-button" onclick="toggleInformation('toggleContainerHome')">
+                Togglyyy
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="information" id="informationHome">
+                <p>lol hi</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+         <!-- Arrow Toggle Button Section -->
+         <div class="toggle-container" id="toggleContainerAbout">
+            <button class="toggle-button" onclick="toggleInformation('toggleContainerAbout')">
+                Toggling well
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="information" id="informationAbout">
+                <p>slay </p>
+            </div>
+        </div>
+    </section>
+        <p>Learn more about our website.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Fun In The Sun  </h2>
+         <!-- Arrow Toggle Button Section -->
+         <div class="toggle-container" id="toggleContainerContact">
+            <button class="toggle-button" onclick="toggleInformation('toggleContainerContact')">
+                Learn how to be more like mina:
+                <span class="arrow">&#9660;</span>
+            </button>
+            <div class="information" id="informationContact">
+                <p>be more slay. </p>
+            </div>
+        </div>
+    </section>
+        <p>Reach out to us for more information.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
