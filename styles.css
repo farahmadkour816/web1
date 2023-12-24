@@ -1,15 +1,19 @@
-/* ... (Your existing CSS code) ... */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center; /* Center text content */
+}
+
+header, nav, section, footer {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #320a57;
+    color: rgb(255, 255, 255);
     padding: 1rem;
-    text-align: center;
 }
 
 nav ul {
@@ -29,50 +33,53 @@ nav a {
 }
 
 section {
-    padding: 2rem;
+    padding: 1rem;
+    margin: auto; /* Center the section content */
+    max-width: 800px; /* Adjust the maximum width as needed */
 }
 
 footer {
-    background-color: #333;
+    background-color: #320a57;
     color: #fff;
-    text-align: center;
     padding: 1rem;
 }
 
-/* Added Button Styles */
 .button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #20d0d6; /* Green background color */
-    color: white; /* White text color */
+    padding: 10px 90px;
+    position: center;
+    background-color: #320a57;
+    color: white;
     text-decoration: none;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    margin-right: 20px; /* Adjusted spacing */
+    /*margin-right: 15px;*/
 }
 
 .button:hover {
-    background-color: #45a049; /* Darker green color on hover */
+    background-color: #284cad;
 }
 
-/* Added Styles for Arrow Toggle Button */
 .toggle-container {
     position: relative;
     cursor: pointer;
 }
 
 .toggle-button {
-    background-color: #db3495;
+    background-color: #320a57;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 80px;
     border: none;
     outline: none;
     border-radius: 5px;
     display: flex;
     align-items: center;
-    margin-top: 20px; /* Adjusted spacing */
+    margin: auto; /* Center the toggle button */
+    margin-top: 20px;
+    text-align: center; /* Center text within the button */
+
 }
 
 .arrow {
@@ -82,20 +89,20 @@ footer {
 
 .information {
     display: none;
-    position: absolute;
+    position: center;
     top: 40px;
     left: 0;
     background-color: #f1f1f1;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
 }
 
 .show-information .arrow {
-    transform: rotate(180deg);
+    transform: rotate(540deg);
 }
 
 .show-information .information {
     display: block;
 }
-
